@@ -1,0 +1,170 @@
+News.css
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffaf0; /* Light golden background */
+  color: #333;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #d4af37; /* Gold */
+  color: #b8860b; /* Dark goldenrod */
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Spinner */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f5deb3; /* Wheat */
+  border-top: 5px solid #d4af37; /* Gold */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* News Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* News Card */
+.col-md-4 {
+  flex: 0 0 30%;
+  box-sizing: border-box;
+}
+
+.news-card {
+  background: #fff8dc; /* Cornsilk */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.15); /* Gold shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(184, 134, 11, 0.25); /* Dark goldenrod shadow */
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card h3 {
+  font-size: 1.25rem;
+  margin: 15px;
+  color: #b8860b; /* Dark goldenrod */
+}
+
+.news-card p {
+  font-size: 0.9rem;
+  margin: 0 15px 15px 15px;
+  color: #6b4a14; /* Golden brown */
+}
+
+.news-card a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #d4af37; /* Gold */
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  transition: background 0.2s ease;
+}
+
+.news-card a:hover {
+  background: #b8860b; /* Dark goldenrod */
+}
+
+/* Buttons */
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-dark {
+  background: #d4af37; /* Gold */
+  color: #fff;
+}
+
+.btn-dark:disabled {
+  background: #f0e68c; /* Khaki for disabled state */
+  cursor: not-allowed;
+}
+
+.btn-dark:hover:not(:disabled) {
+  background: #b8860b; /* Dark goldenrod */
+}
+/* NavBar.css */
+
+.navbar {
+  background-color: #d4af37; /* Gold background */
+  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.2); /* Gold shadow */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: #333; /* Subtle hover */
+}
+
+.nav-link {
+  color: #fff; /* White links */
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  color: #333; /* Subtle hover */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline; /* Highlight active link */
+}
