@@ -1,11 +1,9 @@
-News.css
-
 /* General Reset */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #fffaf0; /* Light golden background */
-  color: #333;
+  background-color: #f7f9fa; /* Soft light gray background */
+  color: #2c3e50; /* Deep slate gray text */
 }
 
 /* Header */
@@ -14,8 +12,8 @@ h1 {
   font-size: 2.5rem;
   margin: 20px 0;
   padding-bottom: 10px;
-  border-bottom: 4px solid #d4af37; /* Gold */
-  color: #b8860b; /* Dark goldenrod */
+  border-bottom: 4px solid #20a39e; /* Teal */
+  color: #2c3e50; /* Deep slate gray */
 }
 
 /* Container */
@@ -36,8 +34,8 @@ h1 {
 .spinner div {
   width: 50px;
   height: 50px;
-  border: 5px solid #f5deb3; /* Wheat */
-  border-top: 5px solid #d4af37; /* Gold */
+  border: 5px solid #e1ecef; /* Pale gray */
+  border-top: 5px solid #20a39e; /* Teal */
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -66,16 +64,16 @@ h1 {
 }
 
 .news-card {
-  background: #fff8dc; /* Cornsilk */
+  background: #ffffff; /* White */
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.15); /* Gold shadow */
+  box-shadow: 0 4px 8px rgba(32, 163, 158, 0.15); /* Teal shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .news-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(184, 134, 11, 0.25); /* Dark goldenrod shadow */
+  box-shadow: 0 6px 12px rgba(32, 163, 158, 0.25); /* Teal shadow */
 }
 
 .news-card img {
@@ -87,28 +85,28 @@ h1 {
 .news-card h3 {
   font-size: 1.25rem;
   margin: 15px;
-  color: #b8860b; /* Dark goldenrod */
+  color: #2c3e50; /* Deep slate gray */
 }
 
 .news-card p {
   font-size: 0.9rem;
   margin: 0 15px 15px 15px;
-  color: #6b4a14; /* Golden brown */
+  color: #556c77; /* Cool gray */
 }
 
 .news-card a {
   display: block;
   text-align: center;
   text-decoration: none;
-  background: #d4af37; /* Gold */
-  color: #fff;
+  background: #20a39e; /* Teal */
+  color: #ffffff; /* White */
   padding: 10px;
   border-radius: 0 0 8px 8px;
   transition: background 0.2s ease;
 }
 
 .news-card a:hover {
-  background: #b8860b; /* Dark goldenrod */
+  background: #168f8a; /* Darker teal */
 }
 
 /* Buttons */
@@ -122,38 +120,38 @@ button {
 }
 
 .btn-dark {
-  background: #d4af37; /* Gold */
-  color: #fff;
+  background: #20a39e; /* Teal */
+  color: #ffffff; /* White */
 }
 
 .btn-dark:disabled {
-  background: #f0e68c; /* Khaki for disabled state */
+  background: #c4dfe3; /* Soft teal-gray */
   cursor: not-allowed;
 }
 
 .btn-dark:hover:not(:disabled) {
-  background: #b8860b; /* Dark goldenrod */
+  background: #168f8a; /* Darker teal */
 }
-/* NavBar.css */
 
+/* Navbar */
 .navbar {
-  background-color: #d4af37; /* Gold background */
-  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.2); /* Gold shadow */
+  background-color: #20a39e; /* Teal */
+  box-shadow: 0 4px 8px rgba(32, 163, 158, 0.2); /* Teal shadow */
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff; /* White text */
+  color: #ffffff; /* White text */
   text-transform: uppercase;
 }
 
 .navbar-brand:hover {
-  color: #333; /* Subtle hover */
+  color: #e1ecef; /* Light gray hover */
 }
 
 .nav-link {
-  color: #fff; /* White links */
+  color: #ffffff; /* White links */
   font-size: 1rem;
   font-weight: 500;
   margin-right: 15px;
@@ -161,10 +159,14 @@ button {
 }
 
 .nav-link:hover {
-  color: #333; /* Subtle hover */
+  color: #c4dfe3; /* Soft teal-gray */
 }
 
 .nav-link.active {
   font-weight: bold;
   text-decoration: underline; /* Highlight active link */
+}
+/* Add this to your CSS to style the loading bar */
+.react-top-loading-bar {
+  z-index: 1000; /* Ensure the bar is always on top */
 }
