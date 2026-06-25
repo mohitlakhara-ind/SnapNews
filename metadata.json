@@ -1,0 +1,14 @@
+{
+  "name": "SnapNews",
+  "description": "Professional frontend codebase built with JavaScript.",
+  "topics": [
+    "javascript",
+    "frontend",
+    "optimized-portfolio"
+  ],
+  "homepage_url": "https://github.com/mohitlakhara-ind/SnapNews",
+  "private": false,
+  "has_issues": true,
+  "has_projects": true,
+  "has_wiki": true
+}
